@@ -10,6 +10,6 @@ A few images for this project
 
 ![Firs Status Image](https://github.com/furkankalender/animation_counter/blob/master/github_image/firstImage.PNG?raw=true)
 
-![Second Status Image](https://raw.githubusercontent.com/furkankalender/animation_counter/master/github_image/secondImage.png)
+![Second Status Image](https://github.com/furkankalender/animation_counter/blob/master/github_image/secondImage.PNG?raw=true)
 
-![Third Status Image](https://raw.githubusercontent.com/furkankalender/animation_counter/master/github_image/thirdImage.png)
+![Third Status Image](https://github.com/furkankalender/animation_counter/blob/master/github_image/thirdImage.PNG?raw=true)
