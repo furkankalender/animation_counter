@@ -27,11 +27,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  double value = 0;
-
+  int value = 0;
+  final int totalVal = 26;
   void increaseValue() {
     setState(() {
-      value = ((value + 1) % 100);
+      value = int.tryParse(((value + 1) % (totalVal + 1)).toString()) ?? 0;
     });
   }
 
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomPercentIndicator(
-              width: 140,
+              width: 180,
               height: 70,
               reverse: false,
               borderRadius: 12,
@@ -52,19 +52,38 @@ class _MyHomePageState extends State<MyHomePage> {
               progressWidth: 8,
               shadowColor: Colors.grey.withOpacity(.2),
               progressColor: Colors.orange,
-              progress: value / 100,
+              progress: value / totalVal,
               child: Center(
-                  child: Text(
-                "$value / 100",
-                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "$value",
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                  ),
+                  const Text(
+                    " / ",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24, color: Colors.grey),
+                  ),
+                  Text(
+                    "$totalVal",
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.grey),
+                  ),
+                ],
               )),
             ),
             const SizedBox(
               height: 20,
             ),
             ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.orange),
+              ),
               onPressed: () => increaseValue(),
-              child: const Text('Increase value'),
+              child: const Text(
+                'Increase value',
+                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
             )
           ],
         ),

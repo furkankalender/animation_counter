@@ -1,16 +1,15 @@
 # animation_counter
 
-A new Flutter project.
+A Flutter counter Animation
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is include count status animation. You can give your total value. After that when you increase your count, animation will also increase.
 
-A few resources to get you started if this is your first Flutter project:
+A few images for this project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Firs Status Image](https://raw.githubusercontent.com/furkankalender/animation_counter/master/github_image/firstImage.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Second Status Image](https://raw.githubusercontent.com/furkankalender/animation_counter/master/github_image/secondImage.png)
+
+![Third Status Image](https://raw.githubusercontent.com/furkankalender/animation_counter/master/github_image/thirdImage.png)
